@@ -1,0 +1,38 @@
+
+body{
+    background-image: url(https://images.unsplash.com/photo-1554296048-b59c9fca4857?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80);
+    background-size: auto 100vh;
+    font-family:Arial;
+    height: 100vh;
+  }
+  
+  .menu{
+    background-color: whitesmoke;
+    position: fixed;
+    width: 100vw;
+    top: 0px;
+  }
+
+  .menu ul{
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-around;
+  }
+
+  .menu li{
+    list-style:none;
+  }
+
+  a{
+    text-decoration: none;
+  }
+  
+  .site-subtitle,
+  .site-title{
+    color:whitesmoke;
+    text-align: center;
+  }
+  
+  .site-subtitle{
+    font-style: italic;
+  }
