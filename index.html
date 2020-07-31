@@ -5,18 +5,91 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bruno Mian Silva</title>
   <link rel="stylesheet" href="./css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Bebas+Neue&family=Cinzel&family=Lora:ital@1&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/d1d47762d5.js" crossorigin="anonymous"></script>
 </head>
-<body>
+
   <header>
-    <nav class = "menu">
-      <ul>
-        <li><a href="#">Sobre</a></li>
-        <li><a href="#">Portfólio</a></li>
-        <li><a href="#">Contato</a></li>
+    <nav class= "menu">
+      <ul class="container">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
       </ul>
     </nav>
-    <h1 class="site-title">Bruno Mian Silva</h1>
-    <h2 class="site-title">Geologia e Metalúrgia</h2>
+    <div class= title>
+      <h1 class="site-title">Bruno Mian Silva</h1>
+      <h2 class="site-subtitle">Geologia e Metalurgia</h2>
+    </div>
   </header>
+  
+  <section class="sobre container" id="sobre">
+    <h2>sobre</h2>
+    <figure class = "avatar">
+      <img src="./image/fotinha.png" alt="Bruno Mian Silva">
+    </figure>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, illum repellat? Soluta, quam voluptas molestiae quidem voluptate ipsam explicabo, a quos illo iure voluptatem sapiente et? Exercitationem sit a ipsa.</p>
+    <p>Nemo aliquam repellendus unde excepturi necessitatibus totam, odio reiciendis iure soluta ullam similique tenetur alias cupiditate aliquid neque, ducimus facilis praesentium veritatis fuga nesciunt sint assumenda harum. Culpa, assumenda eaque!</p>
+    <p>Facere aliquam ipsum assumenda ratione, natus animi maiores, non aspernatur minima, odit voluptates iste corporis ex vel quas optio quidem eius. Ullam iusto sit odio commodi repellendus harum fugiat aperiam?</p>
+    <p>Este site foi construido durante a <a href="https://www.alura.com.br/imersao-css"> Imersão CSS da Alura</a> ;) </p>
+  </section>
+    <section class = "projetos container" id="projetos">
+      <h2>Projetos</h2>
+      
+      <div class = "grid">
+        <figure>
+          <img class="img-projetos" src="./image/pdf.png">
+          <figcaption>Geologia</figcaption>
+        </figure>
+
+        <figure>
+          <img class="img-projetos" src="./image/pdf.png">
+          <figcaption>Geologia</figcaption>
+        </figure>
+
+        <figure>
+          <img class="img-projetos" src="./image/pdf.png">
+          <figcaption>Geologia</figcaption>
+        </figure>
+
+        <figure>
+          <img class="img-projetos" src="./image/pdf.png">
+          <figcaption>Geologia</figcaption>
+        </figure>
+
+        <figure>
+          <img class="img-projetos" src="./image/pdf.png">
+          <figcaption>Geologia</figcaption>
+        </figure>
+
+        <figure>
+          <img class="img-projetos" src="./image/pdf.png">
+          <figcaption>Metalurgia</figcaption>
+        </figure>
+
+        <figure>
+          <img class="img-projetos" src="./image/pdf.png">
+          <figcaption>Tecnologia</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="contato container" id="contato">
+      <h2>Contato</h2>
+      <div class="grid icons">
+        <a target="_blank" href="https://github.com/BrunoMian">
+          <i class="fab fa-github"></i>
+        </a>
+        <a target="_blank" href="https://www.facebook.com/bruno.m.silva.5">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a target="_blank" href="https://www.linkedin.com/in/bruno-mian-silva-5242ab153/">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="mailto:brunomian5@gmail.com">
+          <i class="fas fa-envelope-square"></i>
+        </a>
+      </div>
+    </section>
 </body>
 </html>
