@@ -1,38 +1,239 @@
+/* reset do CSS */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+/* Deixar unidades fixas apenas para o body*/
 body{
-    background-image: url(https://images.unsplash.com/photo-1554296048-b59c9fca4857?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80);
-    background-size: auto 100vh;
+    background-image: linear-gradient(to top, whitesmoke, brown 10%, brown);
+    background-size: 100vw 100vh;
     font-family:Arial;
     height: 100vh;
+    font-size: 30px;
+    font-family: 'Bebas Neue', cursive;
+  }
+
+
+
+  /*Se a tela tiver pelo menos 300 px, vai carregar estes estilos*/
+  @media (min-width:300px) {
+    body{
+      font-size: 12px;
+    }
+  }
+
+  /*Se a tela tiver pelo menos 400 px, vai carregar estes estilos*/
+  @media (min-width:400px) {
+    body{
+      font-size: 14px;
+    }
+  }
+
+  /*Se a tela tiver pelo menos 400 px, vai carregar estes estilos*/
+  @media (min-width:600px) {
+    body{
+      font-size: 18px;
+    }
   }
   
+header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../image/teste.jpg");
+  background-size: 100vw 100vh;
+  -webkit-background-composite: inherit;
+  filter: blur(60%);
+}
+
   .menu{
     background-color: whitesmoke;
     position: fixed;
-    width: 100vw;
+    width: 80vw;
+    border-radius: 8px;
+    box-shadow: 0 0 32px ;
     top: 0px;
+    z-index: 1;
   }
 
   .menu ul{
     display: flex;
-    justify-content: space-between;
     justify-content: space-around;
+    padding: 3px;
+    margin: 3px;
   }
 
   .menu li{
     list-style:none;
   }
 
+  .menu a{
+    display: block;
+    padding: 10px 20px;
+    transition: background-color 1s,color 2s;
+  }
+
+  .menu a:active,
+  .menu a:hover{
+    background-color: lightgray;
+    border-radius: 8px;
+    color: red;
+  }
+
   a{
     text-decoration: none;
   }
+
+  a:hover{
+    color: teal;
+    text-decoration: underline;
+
+  }
+
   
+  .title{
+    transform: scale(0.2) translate(50vh);
+    opacity: 0;
+    animation: ease 2s animacaoTitulo forwards;
+  }
+
+  @keyframes animacaoTitulo{
+    to {
+      transform: scale(1) translate(0);
+      opacity: 1;
+    }
+  }
   .site-subtitle,
   .site-title{
-    color:whitesmoke;
+    color:white;
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+  }
+  
+  .site-title{
+    font-size: 4em;
+  }
+  .site-subtitle{
+    font-style: italic;
+    font-size: 3em;
+    line-height: 2.5em;
+  }
+  .sobre,
+  .contato,
+  .projetos{
+    padding: 4em;
+    min-height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .sobre h2,
+  .contato h2,
+  .projetos h2{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2em;
+    color: white;
+    margin-bottom: 0.5em;
+  }
+
+  @media(min-width:1200px) {
+  .container{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+  }
+  }
+
+  .sobre .avatar{
+    float: right;
+    margin-left: 2em;
+  }
+
+  .sobre .avatar img{
+    /*border-radius: 50%;*/
+    clip-path: circle(40%);
+    height: 200px;
+    width: 240px;
+  }
+
+  .sobre a{
+    color: cyan;
+  }
+
+  .sobre p{
+    color: white;
+    text-indent: 1.2em;
+    margin-bottom: 1.4em;
+    text-align: justify;
+  }
+
+  .projetos .grid{
+    display: flex;
+    overflow-x: auto;
+  }
+
+  @media (min-width:300px){
+    .projetos .grid{
+      align-content: center;
+      justify-content: center;
+      height: calc(100vh - 6em - 48px);
+      overflow-x: auto;
+    }
+  }
+
+  @media (min-width:600px){
+    .projetos .grid{
+      grid-template-columns: repeat(3, 10em);
+      align-content: center;
+      justify-content: center;
+      height: calc(100vh - 6em - 48px);
+      overflow-x: auto;
+    }
+  }
+
+  @media (min-width:800px){
+    .projetos .grid{
+      grid-template-columns: repeat(4, 10em);
+      align-content: center;
+      justify-content: center;
+      height: calc(100vh - 6em - 48px);
+      overflow-x: auto;
+    }
+  }
+  
+
+  .projetos figure {
+    text-align: center;
+  }
+
+  .img-projetos:hover{
+    transform: scale(1.2) rotate(-2deg);
+  }
+
+  .img-projetos{
+    height: 8em;
+    width: 8em;
+    object-fit: cover;
+    transition: 500ms;
+  }
+
+  .contato a {
+    color: whitesmoke;
+    font-size: 6em;
+    padding: 20px;
+    transition: text-shadow 1s;
+  }
+
+  .contato a:active,
+  .contato a:hover{
+    text-decoration: none;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+  }
+
+  .contato .icons{
     text-align: center;
   }
   
-  .site-subtitle{
-    font-style: italic;
-  }
