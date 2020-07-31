@@ -43,7 +43,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../image/teste.jpg");
+  background-image: url("https://github.com/BrunoMian/site/blob/master/css/teste.jpg");
   background-size: 100vw 100vh;
   -webkit-background-composite: inherit;
   filter: blur(60%);
@@ -204,7 +204,6 @@ header {
     }
   }
   
-
   .projetos figure {
     text-align: center;
   }
