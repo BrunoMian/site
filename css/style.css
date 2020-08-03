@@ -39,7 +39,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../image/teste1.jpg");
+  background-image: urlurl("https://brunomian.github.io/site/css/teste1.jpg");
   background-size: 100vw 100vh;
   object-fit: cover;
 }
