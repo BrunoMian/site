@@ -7,34 +7,30 @@
 
 /* Deixar unidades fixas apenas para o body*/
 body{
-    background-image: linear-gradient(to top, whitesmoke, brown 10%, brown);
+    background-image: linear-gradient(to top, silver, white 10%, whitesmoke);
     background-size: 100vw 100vh;
     font-family:Arial;
     height: 100vh;
-    font-size: 30px;
-    font-family: 'Bebas Neue', cursive;
+    font-size: 10px;
+    font-family: 'Roboto Slab', serif;
   }
-
-
 
   /*Se a tela tiver pelo menos 300 px, vai carregar estes estilos*/
-  @media (min-width:300px) {
+  @media (min-width:600px) and (orientation: landscape) {
     body{
-      font-size: 12px;
+      font-size: 8px;
     }
   }
 
-  /*Se a tela tiver pelo menos 400 px, vai carregar estes estilos*/
-  @media (min-width:400px) {
+  @media (min-width:800px) and (orientation: landscape) {
     body{
-      font-size: 14px;
+      font-size: 10px;
     }
   }
 
-  /*Se a tela tiver pelo menos 400 px, vai carregar estes estilos*/
-  @media (min-width:600px) {
+  @media (min-width:1000px) and (orientation: landscape) {
     body{
-      font-size: 18px;
+      font-size: 15px;
     }
   }
   
@@ -43,10 +39,9 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("https://brunomian.github.io/site/css/teste.jpg");
+  background-image: url("../image/teste1.jpg");
   background-size: 100vw 100vh;
-  -webkit-background-composite: inherit;
-  filter: blur(60%);
+  object-fit: cover;
 }
 
   .menu{
@@ -90,7 +85,6 @@ header {
   a:hover{
     color: teal;
     text-decoration: underline;
-
   }
 
   
@@ -110,7 +104,6 @@ header {
   .site-title{
     color:white;
     text-align: center;
-    font-family: 'Amatic SC', cursive;
   }
   
   .site-title{
@@ -135,11 +128,21 @@ header {
   .projetos h2{
     font-family: 'Bebas Neue', cursive;
     font-size: 2em;
-    color: white;
+    color: black;
     margin-bottom: 0.5em;
   }
 
-  @media(min-width:1200px) {
+  @media (min-width:300px) and (orientation: portrait) {
+    .sobre h2,
+    .contato h2,
+    .projetos h2{
+      font-size: 2em;
+      color: black;
+      margin-bottom: 0.5em;
+    }
+  }
+
+  @media(min-width:1200px) and (orientation: landscape) {
   .container{
     margin-left: auto;
     margin-right: auto;
@@ -160,70 +163,128 @@ header {
   }
 
   .sobre a{
-    color: cyan;
+    color: SteelBlue;
   }
 
   .sobre p{
-    color: white;
+    color: black;
     text-indent: 1.2em;
     margin-bottom: 1.4em;
     text-align: justify;
+    font-family: 'Caveat', cursive;
+    font-size: 1.8em;
+  }
+
+  @media (min-width:300px) and (orientation: portrait) {
+    .sobre p {
+      font-size: 1.5em;
+    }
+  }
+
+  .projetos p{
+    color: black;
+    text-indent: 1.2em;
+    margin-bottom: 1.4em;
+    text-align: center;
+    font-size: 0.8em;
   }
 
   .projetos .grid{
     display: flex;
     overflow-x: auto;
+    align-items: center;
+    padding: 3em;
   }
 
-  @media (min-width:300px){
+  @media (min-width:600px) and (orientation: landscape){
     .projetos .grid{
       align-content: center;
-      justify-content: center;
-      height: calc(100vh - 6em - 48px);
+      justify-content: flex-start;
+      height: calc(70vh - 6em - 48px);
       overflow-x: auto;
     }
   }
 
-  @media (min-width:600px){
-    .projetos .grid{
-      grid-template-columns: repeat(3, 10em);
-      align-content: center;
-      justify-content: center;
-      height: calc(100vh - 6em - 48px);
-      overflow-x: auto;
-    }
-  }
-
-  @media (min-width:800px){
-    .projetos .grid{
-      grid-template-columns: repeat(4, 10em);
-      align-content: center;
-      justify-content: center;
-      height: calc(100vh - 6em - 48px);
-      overflow-x: auto;
-    }
-  }
   
+  @media (min-width:700px) and (orientation: landscape) {
+    .projetos .grid{
+      align-content: center;
+      justify-content: flex-start;
+      height: calc(60vh - 6em - 48px);
+      overflow-x: auto;
+    }
+  }
+
+  @media (min-width:800px) and (orientation: landscape) {
+    .projetos .grid{
+      align-content: center;
+      justify-content: flex-start;
+      height: calc(80vh - 6em - 48px);
+      overflow-x: auto;
+    }
+  }
+
+  @media (min-width:1000px) and (orientation: landscape) {
+    .projetos .grid{
+      align-content: center;
+      justify-content: flex-start;
+      height: calc(80vh - 6em - 48px);
+      overflow-x: auto;
+    }
+  }
+
+  @media (min-width:300px) and (orientation: portrait) {
+    .projetos .grid{
+      align-content: center;
+      justify-content: flex-start;
+      height: calc(80vh - 6em - 48px);
+      overflow-x: auto;
+    }
+  }
+
   .projetos figure {
     text-align: center;
   }
+
+  @media (min-width:300px) and (orientation: portrait) {
+    figcaption{
+      font-size: 0.8em;
+    }
+  }
+
 
   .img-projetos:hover{
     transform: scale(1.2) rotate(-2deg);
   }
 
   .img-projetos{
-    height: 8em;
-    width: 8em;
+    height: 7em;
+    width: 7em;
     object-fit: cover;
     transition: 500ms;
   }
 
+  @media (min-height:300px) and (orientation: portrait) {
+    .img-projetos{
+      height: 8em;
+      width: 8em;
+      object-fit: cover;
+      transition: 500ms;
+    }
+  }
+  
+
   .contato a {
-    color: whitesmoke;
-    font-size: 6em;
+    color: SteelBlue;
+    font-size: 10em;
     padding: 20px;
     transition: text-shadow 1s;
+  }
+  
+  @media (min-width:300px) and (orientation: portrait) {
+    .contato a {
+      font-size: 8em;
+    }
   }
 
   .contato a:active,
@@ -235,4 +296,3 @@ header {
   .contato .icons{
     text-align: center;
   }
-  
