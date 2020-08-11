@@ -202,11 +202,8 @@ header {
     .projetos .grid{
       align-content: center;
       justify-content: flex-start;
-      width: calc(100vw - 6em - 48px);
+      background-size: auto 80vh;
       overflow-x: auto;
-      align-content: center;
-      text-align: justify;
-      justify-content:center;
     }
   }
 
@@ -215,7 +212,7 @@ header {
     .projetos .grid{
       align-content: center;
       justify-content: flex-start;
-      width: calc(100vw - 6em - 48px);
+      width: calc(60vw - 6em - 48px);
       overflow-x: auto;
     }
   }
