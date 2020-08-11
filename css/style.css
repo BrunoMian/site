@@ -44,6 +44,14 @@ header {
   object-fit: cover;
 }
 
+figure a{
+  display:flex;
+  align-content: center;
+  justify-content: flex-start;
+  overflow-x: auto;
+  padding: 6em;
+}
+
 
   .menu{
     background-color: whitesmoke;
