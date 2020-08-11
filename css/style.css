@@ -198,7 +198,7 @@ header {
     padding: 3em;
   }
 
-  @media (min-width:500px) and (orientation: landscape){
+  @media (min-width:300px) and (orientation: landscape){
     .projetos .grid{
       align-content: center;
       justify-content: flex-start;
@@ -260,8 +260,8 @@ header {
   }
 
   .img-projetos{
-    height: 7em;
-    width: 7em;
+    height: 10em;
+    width: 10em;
     object-fit: cover;
     transition: 500ms;
   }
