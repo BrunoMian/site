@@ -44,11 +44,6 @@ header {
   object-fit: cover;
 }
 
-figure a{
-  align-content: center;
-  justify-content: flex-start;
-}
-
 
   .menu{
     background-color: whitesmoke;
@@ -258,6 +253,12 @@ figure a{
       font-size: 0.8em;
     }
   }
+
+figure a{
+  align-content: center;
+  text-align: justify;
+  justify-content:center;
+}
 
 
   .img-projetos:hover{
