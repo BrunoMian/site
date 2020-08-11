@@ -42,12 +42,6 @@ header {
   background-size: 100vw 100vh;
   object-fit: cover;
 }
-  
-@media @media (min-width:600px) and orientation: portrait {
-    body{
-      background-image: url("https://brunomian.github.io/site/css/foto2.jpg");
-    }
-  }
 
   .menu{
     background-color: whitesmoke;
