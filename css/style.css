@@ -9,7 +9,6 @@
 body{
     background-image: linear-gradient(to top, silver, white 10%, whitesmoke);
     background-size: 100vw 100vh;
-    font-family:Arial;
     height: 100vh;
     font-size: 10px;
     font-family: 'Roboto Slab', serif;
@@ -43,7 +42,6 @@ header {
   background-size: 100vw 100vh;
   object-fit: cover;
 }
-
 
   .menu{
     background-color: whitesmoke;
@@ -81,11 +79,10 @@ header {
 
   a{
     text-decoration: none;
-    color: black;
   }
 
   a:hover{
-    color: red;
+    color: teal;
     text-decoration: underline;
   }
 
