@@ -43,6 +43,12 @@ header {
   object-fit: cover;
 }
 
+@media orientation: portrait {
+    header {
+      background-image: url("https://brunomian.github.io/site/css/foto2.jpg");
+    }
+  }
+
   .menu{
     background-color: whitesmoke;
     position: fixed;
