@@ -200,9 +200,10 @@ header {
 
   @media (min-width:300px) and (orientation: landscape){
     .projetos .grid{
+       display: flex;
       align-content: center;
       justify-content: flex-start;
-      height: calc(40vh - 6em - 48px);
+      height: calc(70vh - 6em - 48px);
       overflow-x: auto;
     }
   }
@@ -210,6 +211,7 @@ header {
   
   @media (min-width:700px) and (orientation: landscape) {
     .projetos .grid{
+      display: flex;
       align-content: center;
       justify-content: flex-start;
       height: calc(60vh - 6em - 48px);
@@ -219,6 +221,7 @@ header {
 
   @media (min-width:800px) and (orientation: landscape) {
     .projetos .grid{
+       display: flex;
       align-content: center;
       justify-content: flex-start;
       height: calc(80vh - 6em - 48px);
@@ -228,6 +231,7 @@ header {
 
   @media (min-width:1000px) and (orientation: landscape) {
     .projetos .grid{
+      display: flex;
       align-content: center;
       justify-content: flex-start;
       height: calc(80vh - 6em - 48px);
@@ -237,6 +241,7 @@ header {
 
   @media (min-width:300px) and (orientation: portrait) {
     .projetos .grid{
+      display: flex;
       align-content: center;
       justify-content: flex-start;
       height: calc(80vh - 6em - 48px);
