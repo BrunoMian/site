@@ -47,8 +47,6 @@ header {
 figure a{
   align-content: center;
   justify-content: flex-start;
-  overflow-x: auto;
-  padding: 6em;
 }
 
 
