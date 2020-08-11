@@ -193,7 +193,7 @@ header {
     display: flex;
     overflow-x: auto;
     align-items: center;
-    padding: 3em;
+    padding: 6em;
   }
 
   @media (min-width:600px) and (orientation: landscape){
