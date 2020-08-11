@@ -201,7 +201,6 @@ header {
   @media (min-width:300px) and (orientation: landscape){
     .projetos .grid{
       align-content: center;
-      justify-content: flex-start;
       background-size: auto 80vh;
       overflow-x: auto;
     }
@@ -211,7 +210,6 @@ header {
   @media (min-width:700px) and (orientation: landscape) {
     .projetos .grid{
       align-content: center;
-      justify-content: flex-start;
       width: calc(60vw - 6em - 48px);
       overflow-x: auto;
     }
