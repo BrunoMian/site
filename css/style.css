@@ -9,6 +9,7 @@
 body{
     background-image: linear-gradient(to top, silver, white 10%, whitesmoke);
     background-size: 100vw 100vh;
+    font-family:Arial;
     height: 100vh;
     font-size: 10px;
     font-family: 'Roboto Slab', serif;
@@ -38,16 +39,11 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("https://brunomian.github.io/site/css/teste1.jpg");
+  background-image: url("../image/teste1.jpg");
   background-size: 100vw 100vh;
   object-fit: cover;
 }
 
-@media (min-width:300px) and orientation: portrait {
-    header {
-      background-image: url("https://brunomian.github.io/site/css/foto2.jpg");
-    }
-  }
 
   .menu{
     background-color: whitesmoke;
