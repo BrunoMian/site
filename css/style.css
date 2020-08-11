@@ -43,7 +43,7 @@ header {
   object-fit: cover;
 }
 
-  @media (min-width:300px) and (orientation: portrait) {
+  @media orientation: portrait {
     header {
         background-image: url("https://brunomian.github.io/site/css/foto2.jpg");
         background-size: 100vw 100vh;
@@ -273,8 +273,8 @@ header {
 
   @media (min-height:300px) and (orientation: portrait) {
     .img-projetos{
-      height: 8em;
-      width: 8em;
+      height: 10em;
+      width: 10em;
       object-fit: cover;
       transition: 500ms;
     }
