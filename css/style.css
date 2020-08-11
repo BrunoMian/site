@@ -209,7 +209,6 @@ figure a{
       justify-content: flex-start;
       height: calc(70vh - 6em - 48px);
       overflow-x: auto;
-      padding: 6em;
     }
   }
 
@@ -220,7 +219,6 @@ figure a{
       justify-content: flex-start;
       height: calc(60vh - 6em - 48px);
       overflow-x: auto;
-      padding: 6em;
     }
   }
 
