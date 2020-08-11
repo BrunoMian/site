@@ -45,11 +45,9 @@ header {
 }
 
 
-  @media only screen (min-width:300px) and orientation: landscape {
+  @media screen and (orientation: landscape) {
     header {
         background-image: url("https://brunomian.github.io/site/css/teste1.jpg");
-        background-size: 100vw 100vh;
-        object-fit: cover;
     }
   }
 
