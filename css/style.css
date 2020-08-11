@@ -202,8 +202,11 @@ header {
     .projetos .grid{
       align-content: center;
       justify-content: flex-start;
-      height: calc(70vh - 6em - 48px);
+      height: calc(50vh - 6em - 48px);
       overflow-x: auto;
+      align-content: center;
+      text-align: justify;
+      justify-content:center;
     }
   }
 
@@ -253,13 +256,6 @@ header {
       font-size: 0.8em;
     }
   }
-
-figure a{
-  align-content: center;
-  text-align: justify;
-  justify-content:center;
-}
-
 
   .img-projetos:hover{
     transform: scale(1.2) rotate(-2deg);
