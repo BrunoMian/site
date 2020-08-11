@@ -202,7 +202,7 @@ header {
     .projetos .grid{
       align-content: center;
       justify-content: center;
-      background-size: auto 80vh;
+      height: calc(70vh - 6em - 48px);
       overflow-x: auto;
     }
   }
